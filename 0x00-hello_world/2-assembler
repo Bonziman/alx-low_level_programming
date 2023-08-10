@@ -1,2 +1,2 @@
-#!/bina/bash
+#!/bin/bash
 gcc -S "$CFILE" > "{$CFLIE}.o"
