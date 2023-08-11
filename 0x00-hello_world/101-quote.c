@@ -2,14 +2,14 @@
 #include <string.h>
 
 /**
- * Main - The start point of the program
+ * main - This is the entry point of the code
  *
- * Return - always (1)
- *
+ * Return: Always 1 (Failure)
  */
 int main(void)
 {
-	const char *quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	char quote = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+
 	write(2, quote, strlen(quote));
 	return (1);
 }
