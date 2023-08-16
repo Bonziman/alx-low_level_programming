@@ -6,17 +6,12 @@
  *
  * Return: always 0
  * 
- * @r: the number that the function will operate on
+ * @c: the variable which contains the absulute value of 'n'
  *
- * @n: the variable which contains the absulute value of 'n'
  */
 int _abs(int c)
 {
-	if (c < 0)
-	{
-		int abs_c;
-		abs_c = -1 * c;
-		return (abs_c);
-	}
-	return (0);
+	int abs_c;
+	abs_c = -1 * c;
+	return (abs_c);
 }
