@@ -13,6 +13,6 @@ int _abs(int c)
 {
 	int abs_c;
 
-	abs_c = -1 * c;
+	abs_c = c * -1;
 	return (abs_c);
 }
