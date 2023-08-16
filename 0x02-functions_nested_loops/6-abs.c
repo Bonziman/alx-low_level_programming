@@ -12,7 +12,13 @@
 int _abs(int c)
 {
 	int abs_c;
-
-	abs_c = c * -1;
+	
+	abs_c = c;
+	if (c < 0)
+	{
+		abs_c = c * -1;
+		return (abs_c);
+	}
 	return (abs_c);
 }
+
