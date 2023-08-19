@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * main - FIZZ-BUZZ function
  *
@@ -9,31 +9,24 @@
 int main(void)
 {
 	int i;
-	char *f = "Fizz";
-	char *b = "Buzz";
-	char *fb = "FizzBuzz";
 
 	for (i = 1; i <= 100; i++)
 	{
-		if (i % 5 == 0)
+		if (i % 15 == 0)
 		{
-			_putchar(b + '0');
-			_putchar(' ');
+			printf("FizzBuzz ");
 		}
 		else if (i % 3 == 0)
 		{
-			_putchar(char f);
-			_putchar(' ');
+			printf("Fizz ");
 		}
-		else if (i % 15 == 0)
+		else if (i % 5 == 0)
 		{
-			_putchar(char fb);
-			_putchar(' ');
+			printf("Buzz ");
 		}
 		else
 		{
-			_putchar(i);
-			_putchar(' ');
+			printf("%d ", i);
 		}
 	}
 	return (0);
