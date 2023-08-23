@@ -22,6 +22,11 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 		n--;
 	}
-	*dest = '\0';
+	while (n > 0)
+	{
+		*dest = '\0';
+		dest++;
+		n--;
+	}
 	return (rslt);
 }
