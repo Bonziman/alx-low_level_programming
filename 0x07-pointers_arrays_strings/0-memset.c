@@ -13,7 +13,7 @@
 char *_memset(char *s, char  b, unsigned int n)
 {
 	unsigned char *bytptr = (unsigned char *)s;
-	unsigned char bytvl  (unsigned char)b; 
+	unsigned char bytvl = (unsigned char)b;
 	unsigned int i;
 
 	for (i = 0; i < n; i++)
