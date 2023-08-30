@@ -1,5 +1,10 @@
 #include "main.h"
 
+/**
+ * print_chessboard - function that prints two dimensional arr
+ * @a: the array to print.
+ */
+
 void print_chessboard(char (*a)[8])
 {
 	int i, j;
