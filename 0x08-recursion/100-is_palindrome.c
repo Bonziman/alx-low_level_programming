@@ -4,7 +4,7 @@
  * @s: the string
  * Return: the length of the rtring
  */
-int str_len(const char *s)
+int str_len(char *s)
 {
 	int i = 0;
 
@@ -25,7 +25,7 @@ int ispldrm(int i, char *s)
 {
 	if (*s)
 	{
-		if (*s != s[str_len(s - i)])
+		if (*s != s[str_len(s) - i])
 		{
 			return (0);
 		}
