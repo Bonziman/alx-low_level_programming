@@ -2,7 +2,7 @@
 
 /**
  * _sqrt - finds the square root of a value
- * @prev: previous value
+ * @prv: previous value
  * @root: the square value
  * Return: the square root
  */
