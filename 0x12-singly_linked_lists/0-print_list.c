@@ -1,5 +1,6 @@
 #include <stddef.h>
 #include "lists.h"
+#include <stdio.h>
 
 /**
  * print_list - Prints elements of linked list & returns the number of nodes.
