@@ -15,29 +15,12 @@ size_t print_list(const list_t *h)
 	{
 		if (h->str == NULL)
 		{
-			_putchar('[');
-			_putchar('0');
-			_putchar(']');
-			_putchar(' ');
-			_putchar('(');
-			_putchar('n');
-			_putchar('i');
-			_putchar('l');
-			_putchar(')');
+			printf("[0] (nil)\n");
 		}
 		else
 		{
-			size_t len = h->len;
-			char *str = h->str;
-			size_t i;
-
-			for (i = 0; i < len; i++)
-			{
-				_putchar(str[i]);
-			}
+			printf("[%lu] %s\n", h->len, h->str)
 		}
-
-		_putchar('\n');
 		h = h->next;
 		count++;
 	}
