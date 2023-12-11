@@ -1,1 +1,1 @@
-this is a dir intended for c dynamic libs learning
+this is a directory to learn about C dynamic libraries
