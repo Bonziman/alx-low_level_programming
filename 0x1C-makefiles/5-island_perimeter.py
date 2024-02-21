@@ -17,6 +17,7 @@ def island_perimeter(grid):
             i(int): the row position
             j(int): the column position.
         """
+        perim = 0
         if i >= len(grid) or j >= len(grid[0]) or \
                 i < 0 or j < 0 or grid[i][j] == 0:
             return 1
@@ -28,6 +29,8 @@ def island_perimeter(grid):
         perim += dfs(i, j - 1)
         perim += dfs(i - 1, j)
         return perim
+    if not any(any(row) for row in grid):
+        return 0
     for i in range(len(grid)):
         for j in range(len(grid[0])):
             if grid[i][j]:
